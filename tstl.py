@@ -22,7 +22,7 @@ import shutil
 
 def find_testpaths_in(path_root):
     paths = (
-        p for p in os.listdir(path_root) if p.endswith(".ltst") and not os.path.isdir(p)
+        p for p in os.listdir(path_root) if p.endswith(".tstl") and not os.path.isdir(p)
     )
     yield from paths
 
